@@ -1,6 +1,6 @@
 [
     {
-        "image": "https://via.placeholder.com/150",
+        "image": "/assets/events-posters/quiz-poster.png",
         "title": "Quiz Competition",
         "date": "21-08-2024",
         "venue": "BKB Seminar Hall, CITK",
@@ -9,7 +9,7 @@
     },
 
     {
-        "image": "https://via.placeholder.com/150",
+        "image": "/assets/events-posters/DOER-ideation-challenge.jpg",
         "title": "DOER Ideation Challenge",
         "date": "",
         "venue": "Online",
@@ -17,7 +17,7 @@
         "completed": true
     },
     {
-        "image": "https://via.placeholder.com/150",
+        "image": "/assets/events-posters/antha-prerna.png",
         "title": "Antha-Prerna",
         "date": "23-11-2023",
         "venue": "Virtual Classroom",
@@ -25,7 +25,7 @@
         "completed": true
     },
     {
-        "image": "https://via.placeholder.com/150",
+        "image": "/assets/events-posters/case-study-competition.png",
         "title": "Case Study Competition",
         "date": "30-08-2023",
         "venue": "BKB Seminar Hall, CITK",
@@ -33,7 +33,7 @@
         "completed": true
     },
     {
-        "image": "https://via.placeholder.com/150",
+        "image": "/assets/events-posters/orientation-2023.png",
         "title": "Orientation 2023",
         "date": "12-08-2023",
         "venue": "BKB Seminar Hall, CITK",
@@ -41,7 +41,15 @@
         "completed": true
     },
     {
-        "image": "https://via.placeholder.com/150",
+        "image": "/assets/events-posters/startup-idea-competition.png",
+        "title": "Startup Idea Competition",
+        "date": "30-8-2023",
+        "venue": "BKB Seminar Hall, CITK",
+        "link": "",
+        "completed": true
+    },
+    {
+        "image": "/assets/events-posters/intraday.png",
         "title": "Intraday 2023",
         "date": "24-03-2023",
         "venue": "Near VCR",
