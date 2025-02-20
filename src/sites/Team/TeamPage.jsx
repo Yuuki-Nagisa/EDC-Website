@@ -1,10 +1,11 @@
-import { TeamComponent } from "@/components/team";
+import { TeamSection } from "@/components/team";
 
 export default function TeamPage() {
-    
     return (
         <>
-            <TeamComponent/>
+            <main>
+                <TeamSection />
+            </main>
         </>
-    )
+    );
 }
