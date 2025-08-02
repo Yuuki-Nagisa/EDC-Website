@@ -3,130 +3,122 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  width: 100%;
-  background-image: radial-gradient(#0c0000, #080018);
-  background-repeat: no-repeat;
-  max-height: max-content;
-  max-width: max-content;
-  overflow-x: hidden;
-}
-
-
-/* Wrapper */
-.gallery-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 16px;
-}
-
-/* Heading */
-.heading {
-  text-align: center;
-  font-size: 2.5em;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  color: white;
-}
-
-/* Description */
-.gallery-description {
-  color: #b6b5b5;
-  font-size: 17px;
-  text-align: center;
-  margin-bottom: 20px;
-  padding: 0 10px;
-}
-
-/* Gallery grid */
-.gallery-image {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 0;
-}
-
-/* Image box */
-.img-box {
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-  background-color: white;
-  transition: transform 0.3s ease;
-}
-
-/* Images */
-.gallery-image img {
-  width: 100%;
-  height: auto;
-  min-height: 220px;
-  display: block;
-  transform: scale(1);
-  transition: transform 0.4s ease;
-}
-
-/* Hover effect */
-.img-box:hover img {
-  transform: scale(1.1);
-}
-
-.img-box:hover .transparent-box {
-  background-color: rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-}
-
-/* Transparent overlay */
-.transparent-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  transition: background-color 0.3s ease;
-}
-
-/* Optional caption styling */
-.caption {
-  position: absolute;
-  bottom: 5px;
-  left: 10px;
-  opacity: 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-/* Responsive tweaks */
-@media (max-width: 479px) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-image: radial-gradient(#0c0000, #080018);
+    background-repeat: no-repeat;
+    max-height: max-content;
+    overflow-x: hidden;
+  }
+  
   .heading {
-    font-size: 1.8em;
-    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    padding: 20px;
+    color: white;
   }
-
+  
   .gallery-description {
-    font-size: 14px;
-    padding: 0 5px;
-    margin-bottom: 16px;
+    color: #b6b5b5;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px; // less side padding for desktop
+   
   }
-
+  
   .gallery-image {
-    grid-template-columns: 1fr;
-    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px;
+    justify-items: center;
+    padding: 30px 10px; // less side padding for desktop
+    
   }
-
-  .gallery-wrapper {
-    padding: 10px;
+  @media (max-width: 479px){
+    .gallery-image{
+        padding: 0px 0px;
+    }
   }
-
+  
   .gallery-image img {
-    min-height: 160px;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: transform 0.4s ease;
+  }
+  
+  .img-box {
+    border-radius: 15px;
+    overflow: hidden;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .transparent-box {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img {
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+  
+  
+  
+  /* Media query for screens with a maximum width of 479px */
+  @media (max-width: 479px) {
+    .heading {
+      font-size: 1.8em;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .gallery-description {
+      font-size: 14px;
+      padding: 5px 2px; // minimal side padding
+      text-align: center; // center text
+      align-items: center;
+    }
+  
+    .gallery-image {
+      grid-template-columns: 1fr; // one image per row
+      grid-gap: 10px;
+      padding: 5px 5px; // minimal side padding
+    }
+  
+    .img-box:hover .transparent-box {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
   }
 
-  .img-box:hover .transparent-box {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-}
