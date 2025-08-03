@@ -39,37 +39,41 @@
 
 html,
 body {
-    max-width: 100vw;
-    overflow-x: hidden;
+    width: 100vw;
+    // overflow-x: hidden;
+    padding: 0%;
+    // Body Flexed 
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
-
 /* animation */
-body::before {
-    /* content: ""; */
-    position: absolute;
-    background: var(--third-glow);
-    border-radius: 50%;
-    width: 30vw; /* Reduced width to fit on the right */
-    height: 30vw;
-    margin-left: 30rem; /* Shifted more to the right */
-    filter: blur(90px);
-    top: calc(50vh - 15vw); /* Adjusted for new size */
-    left: calc(70vw); /* Positioned to the right side */
-    /* animation: animateBefore 10s infinite ease-in-out; */
-}
+// body::before {
+//     content: "";
+//     position: absolute;
+//     background: var(--third-glow);
+//     border-radius: 50%;
+//     width: 30vw; /* Reduced width to fit on the right */
+//     height: 30vw;
+//     margin-left: 30rem; /* Shifted more to the right */
+//     filter: blur(90px);
+//     top: calc(50vh - 15vw); /* Adjusted for new size */
+//     left: calc(70vw); /* Positioned to the right side */
+//     animation: animateBefore 10s infinite ease-in-out; 
+// }
 
-body::after {
-    /* content: ""; */
-    position: flex;
-    background: var(--secondary-glow);
-    border-radius: 50%;
-    width: 400px;
-    height: 500px;
-    filter: blur(90px);
-    top: calc(50vh - 250px);
-    left: calc(65vw); /* Positioned further right */
-    /* animation: animateAfter 10s infinite ease-in-out; */
-}
+// body::after {
+//     content: "";
+//     position: absolute;
+//     background: var(--secondary-glow);
+//     border-radius: 50%;
+//     width: 400px;
+//     height: 500px;
+//     filter: blur(90px);
+//     top: calc(50vh - 250px);
+//     left: calc(65vw); /* Positioned further right */
+//     animation: animateAfter 10s infinite ease-in-out;
+// }
 
 @keyframes animateBefore {
     0% {

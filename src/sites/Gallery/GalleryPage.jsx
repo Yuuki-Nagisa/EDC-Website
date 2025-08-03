@@ -1,5 +1,5 @@
 import Gallery from '@/components/gallery/Gallery';
-import { Navbar } from "@/components/globals";
+import { Navbar, Footer } from "@/components/globals";
 import './GalleryPage.scss';
 
 export default function GalleryPage() {
@@ -9,6 +9,7 @@ export default function GalleryPage() {
     <main className='gallery-section'>
       <Gallery />
     </main>
+    <Footer />
     </>
   );
 };

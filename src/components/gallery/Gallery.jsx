@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+// import React from 'react';
 import images from './images.json';
 import './Gallery.scss'; // You can copy your existing styles here
 import Image from 'next/image';

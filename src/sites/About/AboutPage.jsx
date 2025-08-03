@@ -5,15 +5,21 @@ import {
     Membership,
     JoinUs,
 } from "@/components/about";
+import { Navbar, Footer } from "@/components/globals";
+import './About.scss';
 
 export default function AboutPage() {
     return (
-        <main>
-            <Intro />
-            <Mission />
-            <Activity />
-            <Membership />
-            <JoinUs />
-        </main>
+        <>  
+            <Navbar />
+            <main>
+                <Intro />
+                <Mission />
+                <Activity />
+                <Membership />
+                <JoinUs />
+            </main>
+            <Footer />
+        </>
     );
 }

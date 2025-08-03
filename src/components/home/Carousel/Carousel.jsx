@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 // Define slides outside the component to avoid re-creating them on each render
+
 const slides = [
     {
         image: "1.jpg",
@@ -22,6 +23,10 @@ const slides = [
         image: "4.jpg",
         alt: "Slide 4",
     },
+    {
+        image: "5.jpg",
+        alt: "Slide 5",
+    }
 ];
 export default function Carousel() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -31,9 +36,7 @@ export default function Carousel() {
     };
 
     const handlePrev = () => {
-        setCurrentSlide(
-            (prevSlide) => (prevSlide - 1 + slides.length) % slides.length
-        );
+        setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
     };
 
     // Auto-play the slides
@@ -49,12 +52,8 @@ export default function Carousel() {
         <section className="carousel">
             <div id="carousel">
                 {slides.map((slide, index) => (
-                    <div
-                        key={index}
-                        className={`item ${
-                            index === currentSlide ? "active" : ""
-                        }`}
-                    >
+                    <div key={index} className={`item ${index === currentSlide ? "active" : ""} ${index === (currentSlide-1) ? "prev" : ""} ${index === (currentSlide+1) ? "next" : ""} item-${index}`}>
+
                         {slide.image ? (
                             <Image
                                 src={`/assets/carousel-img/${slide.image}`}
@@ -62,8 +61,7 @@ export default function Carousel() {
                                 width="100"
                                 height="50"
                                 quality={100}
-                                priority= {true}
-                            />
+                                priority= {true} />
                         ) : (
                             <div
                                 dangerouslySetInnerHTML={{
@@ -71,8 +69,8 @@ export default function Carousel() {
                                 }}
                             />
                         )}
-                    </div>
-                ))}
+                    </div>)
+                    )}
             </div>
 
             <button className="carousel-prev" onClick={handlePrev}>

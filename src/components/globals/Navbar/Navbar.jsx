@@ -9,8 +9,9 @@ const Navbar = () => {
                 <Image
                     src="/assets/brand-logo/logo2.png"
                     alt="Logo"
-                    width={300}
-                    height={300}
+                    width={100}
+                    height={100}
+                    loading="lazy"
                 />
             </div>
             <input type="checkbox" id="check" />
@@ -35,7 +36,7 @@ const Navbar = () => {
                     <Link href="/gallery">Gallery</Link>
                 </li>
                 <li>
-                    <Link href="/contact">Reach Us</Link>
+                    <Link href="#Contact">Reach Us</Link>
                 </li>
                 <li>
                     <Link href="/udbhav">E-Summit 24</Link>

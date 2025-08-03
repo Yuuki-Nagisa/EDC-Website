@@ -1,6 +1,6 @@
 import "./EventPage.scss";
 import { UpcomingEvents, CompletedEvents } from "@/components/events";
-import { Navbar } from "@/components/globals";
+import { Navbar, Footer } from "@/components/globals";
 export default function Event() {
     return (
         <>
@@ -9,6 +9,7 @@ export default function Event() {
                 <UpcomingEvents />
                 <CompletedEvents />
             </main>
+            <Footer />
         </>
     );
 }
