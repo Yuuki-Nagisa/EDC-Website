@@ -1,10 +1,5 @@
-import { UdbhavNavbar, UdbhavHero } from "@/components/udbhav";
-import "./Udbhav.scss";
+import { UnderConstruction } from '@/components/udbhav';
+
 export default function Udbhav() {
-    return (
-        <div>
-            <UdbhavNavbar />
-            <UdbhavHero />
-        </div>
-    );
+  return <UnderConstruction />;
 }

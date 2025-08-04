@@ -13,7 +13,6 @@ export default function Hero() {
                             in you
                         </h3>
                         <a href="#welcome">
-
                             {/* <dotlottie-player
                                 src="https://lottie.host/03a99eae-a196-4fd9-a257-b58fcb9716ad/L5igv5vE8i.json"
                                 background="transparent"

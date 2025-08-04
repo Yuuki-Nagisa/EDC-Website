@@ -6,7 +6,7 @@ import "./Welcome.scss";
 
 export default function Welcome() {
     return (
-        <div className="welcome-container">
+        <div className="welcome-container" id="welcome">
             <div className="welcome-box">
                 <h1 className="welcome-heading">We are the <span className="title">EDC!!</span></h1>
                 <p className="welcome-paragraph">
