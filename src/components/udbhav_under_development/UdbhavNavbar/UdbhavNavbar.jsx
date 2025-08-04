@@ -46,7 +46,7 @@ export default function Navbar() {
                 <ul className="nav-menu-items">
                     <li><Link href="/" onClick={showSidebar}>Home</Link></li>
                     <li><Link href="/events" onClick={showSidebar}>Events</Link></li>
-                    <li><Link href="/speakers" onClick={showSidebar}>Speakers</Link></li>
+                    {/* <li><Link href="/speakers" onClick={showSidebar}>Speakers</Link></li> */}
                     
                     <li><Link href="https://forms.gle/qKoRhxmMKkL4XvES6" target="_blank" onClick={showSidebar}>Register</Link></li>
                     {/* <li><span className="nav-attr">emerge. evolve. exceed.</span></li> */}

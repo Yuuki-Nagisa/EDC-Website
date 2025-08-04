@@ -5,9 +5,9 @@ export default function Hero() {
     return (
         <div className="hero-container">
             <div className="hero">
-                <video className='hero-video' preload="auto" playsInline autoPlay loop muted>
+                {/* <video className='hero-video' preload="auto" playsInline autoPlay loop muted>
                     <source src="/assets/hero-video/hero.mp4" type="video/mp4"/>
-                </video>
+                </video> */}
             </div>
 
             <div className="landing">
