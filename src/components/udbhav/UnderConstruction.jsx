@@ -6,6 +6,7 @@ const UnderConstruction = () => (
     <p>
       is being developed 🚧
     </p>
+    <a href="./"><button className="home-button">Go to Home</button></a>
   </div>
 );
 
