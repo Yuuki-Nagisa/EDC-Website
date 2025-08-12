@@ -24,7 +24,7 @@ body {
     align-items: center;
     /* padding: 5px 30px; */
 }
-.item-img{
+.item-.img-css{
     width: 400px;
     height: 200px;
 }
@@ -79,10 +79,12 @@ body {
     justify-content: center;
     align-items: center;
 }
-img {
+.img-css {
     border-radius: 20px;
     max-width: 80%;
     vertical-align: middle;
+    height: 400;
+    width: 400;
 }
 
 .team-item {
@@ -96,13 +98,13 @@ img {
 .team-item:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.team-item img {
+.team-item .img-css {
     width: calc(100% - 60px);
     position: relative;
     z-index: 1;
     transition: transform 0.5s ease;
 }
-.team-item:hover img {
+.team-item:hover .img-css {
     transform: translateX(60px);
 }
 .team-item h4 {
@@ -239,7 +241,7 @@ img {
     
     border: 1px solid transparent;
 }
-img {
+.img-css {
     border-radius: 20px;
     max-width: 68%;
     /* vertical-align: middle; */
@@ -255,13 +257,13 @@ img {
 .coreteam-item:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.coreteam-item img {
+.coreteam-item .img-css {
     width: calc(100% - 60px);
     position: relative;
     z-index: 1;
     transition: transform 0.5s ease;
 }
-.coreteam-item:hover img {
+.coreteam-item:hover .img-css {
     transform: translateX(60px);
 }
 .coreteam-item h3 {
@@ -375,7 +377,7 @@ img {
     margin-top: 20px;
 }
 
-img {
+.img-css {
     border-radius: 20px;
     max-width: 68%;
     object-fit: cover;   
@@ -477,14 +479,14 @@ img {
     /* .team-item:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    .team-item img {
+    .team-item .img-css {
         width: calc(100% - 60px);
         position: relative;
         z-index: 1;
         transition: transform 0.5s ease;
     } */
 
-    img {
+    .img-css {
         border-radius: 20px;
         max-width: 80%;
         margin: 10px 30px;
@@ -515,7 +517,7 @@ img {
         width: calc(100% - 145px);
         margin: 0px -17px 0px;
     }
-    /* .row-core .coreteam-item img {
+    /* .row-core .coreteam-item .img-css {
         border-radius: 20px;
         max-width: 100%;
 
@@ -540,7 +542,7 @@ img {
     .coreteam-item:hover h3 {
         right: 20px;
     }
-    .coreteam-item:hover img {
+    .coreteam-item:hover .img-css {
         transform: translateX(30px);
     }
     .coreteam-item h3 span {

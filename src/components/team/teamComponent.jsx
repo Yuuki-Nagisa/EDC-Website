@@ -27,9 +27,10 @@ export default function TeamComponent({
   return (
     <div className="team-item coreteam-item">
       <img
-        className="item-img"
+        className="item-img img-css"
         src={image ?? "https://placehold.co/100"}
         alt="team"
+        style={{ height: 200, width: 300 }}
       />
       <h4>
         {name}
@@ -46,12 +47,20 @@ export default function TeamComponent({
             target="_blank"
             rel="noreferrer"
           >
-            <i className={getIconClassName("linkedin")} />
+            <img
+              src="assets/Icons/linkedin.png"
+              alt="Email Icon"
+              style={{ width: 20, height: 20 }}
+            />
           </a>
         )}
         {email && (
           <a href={`mailto:${email}`} target="_blank" rel="noreferrer">
-            <i className={getIconClassName("email")} />
+            <img
+              src="assets/Icons/email.png"
+              alt="Email Icon"
+              style={{ width: 20, height: 20 }}
+            />
           </a>
         )}
         {Github && (
@@ -60,7 +69,11 @@ export default function TeamComponent({
             target="_blank"
             rel="noreferrer"
           >
-            <i className={getIconClassName("github")} />
+            <img
+              src="assets/Icons/github.png"
+              alt=""
+              style={{ width: 20, height: 20 }}
+            />
           </a>
         )}
         {Instagram && (
@@ -69,7 +82,11 @@ export default function TeamComponent({
             target="_blank"
             rel="noreferrer"
           >
-            <i className={getIconClassName("instagram")} />
+            <img
+              src="assets/Icons/instagram.png"
+              alt=""
+              style={{ width: 20, height: 20 }}
+            />
           </a>
         )}
       </div>
